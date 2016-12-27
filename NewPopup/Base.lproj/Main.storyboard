@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewPopup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-pG-XBe">
+                                <frame key="frameInset" minX="277" minY="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnPopupClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wV7-z5-aii"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ndf-pG-XBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIu-X8-p0q"/>
+                            <constraint firstItem="ndf-pG-XBe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eMl-oB-zZb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Alert Country Popup-->
+        <scene sceneID="ako-xG-U5L">
+            <objects>
+                <viewController storyboardIdentifier="AlertCountryPopup" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="5su-i6-w0q" customClass="AlertCountryPopup" customModule="NewPopup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PbQ-EU-TO9"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwz-k1-jeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f0O-kq-csS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4BC-cG-Bfz">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="cmA-ls-iAI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWR-rD-9cV">
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.71372549019999998" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d4Z-IP-B0E"/>
+                                </constraints>
+                                <state key="normal" title="Ok">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOkClick:" destination="5su-i6-w0q" eventType="touchUpInside" id="whP-ES-EvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-zh-LiX">
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.71372549019999998" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lL2-eO-pTe"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancelClick:" destination="5su-i6-w0q" eventType="touchUpInside" id="4el-wW-4hQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0R-fY-ajJ">
+                                <frame key="frameInset" minX="166" minY="64" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4BC-cG-Bfz" firstAttribute="leading" secondItem="f0O-kq-csS" secondAttribute="leading" id="9o4-im-hCZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dCM-zh-LiX" secondAttribute="trailing" id="AT7-xN-CLb"/>
+                            <constraint firstItem="uWR-rD-9cV" firstAttribute="width" secondItem="dCM-zh-LiX" secondAttribute="width" id="Aim-ey-0nt"/>
+                            <constraint firstItem="dwz-k1-jeO" firstAttribute="top" secondItem="uWR-rD-9cV" secondAttribute="bottom" id="H3R-Lb-GWd"/>
+                            <constraint firstItem="dCM-zh-LiX" firstAttribute="leading" secondItem="uWR-rD-9cV" secondAttribute="trailing" id="JJT-O9-5mK"/>
+                            <constraint firstItem="dwz-k1-jeO" firstAttribute="top" secondItem="dCM-zh-LiX" secondAttribute="bottom" id="b6A-0A-gQE"/>
+                            <constraint firstAttribute="trailing" secondItem="4BC-cG-Bfz" secondAttribute="trailing" id="flX-XJ-hKn"/>
+                            <constraint firstItem="uWR-rD-9cV" firstAttribute="leading" secondItem="f0O-kq-csS" secondAttribute="leading" id="oi9-nH-xZ1"/>
+                            <constraint firstItem="4BC-cG-Bfz" firstAttribute="top" secondItem="f0O-kq-csS" secondAttribute="top" id="yQ0-cd-fxm"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="150"/>
+                    <connections>
+                        <outlet property="btnCancel" destination="dCM-zh-LiX" id="9zo-iY-yaJ"/>
+                        <outlet property="btnOK" destination="uWR-rD-9cV" id="L6c-YL-xnQ"/>
+                        <outlet property="lblTitle" destination="r0R-fY-ajJ" id="av7-6r-Y4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zud-7L-Ltl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.5" y="79"/>
+        </scene>
+    </scenes>
+</document>
